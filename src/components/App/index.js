@@ -10,7 +10,7 @@ export default () => (
     selectX={datum => new Date(datum.day)
       .setHours(0,0,0,0)
     }
-    selectY={datum => datum.productPerceivedQuality}
+    selectY={datum => parseFloat(datum.productPerceivedQuality)}
     width={200}
   />
 );
